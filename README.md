@@ -1,65 +1,101 @@
 # ChurnScope — Customer Churn Prediction
 
-ChurnScope is a machine learning project focused on predicting customer churn by analyzing customer demographics, account information, and service usage patterns.
+ChurnScope is a machine learning project that explores customer churn patterns and builds predictive classification models to identify customers who are likely to discontinue a telecom service.
 
-## 🎯 Project Objective
+The project uses the IBM Telco Customer Churn dataset and investigates how customer demographics, service subscriptions, account information, and billing patterns relate to churn.
 
-The goal is to identify customers who are more likely to discontinue a service and understand the factors associated with customer churn using machine learning.
+## 🎯 Project Objectives
+
+- Explore customer data to understand churn patterns.
+- Perform data cleaning and preprocessing.
+- Identify important factors associated with customer churn.
+- Build and evaluate multiple machine learning classification models.
+- Compare model performance using classification metrics.
 
 ## 📊 Dataset
 
-This project uses the **Telco Customer Churn** dataset, which contains customer information such as:
+**Dataset:** IBM Telco Customer Churn
 
-- Customer demographics
-- Account and service details
-- Contract types and payment methods
-- Tenure and monthly charges
+The dataset contains customer information, including:
+
+- Demographic details
+- Customer tenure
+- Internet and phone services
+- Contract and payment methods
+- Monthly and total charges
 - Customer churn status
 
-**Target variable:** `Churn` — whether a customer has left the service.
+**Target variable:** `Churn`
+
+The target indicates whether a customer has discontinued the service.
+
+## 🔍 Project Workflow
+
+1. Data loading and exploration
+2. Data cleaning and preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature encoding and transformation
+5. Model training and prediction
+6. Model evaluation and comparison
+
+## 🤖 Machine Learning Models
+
+Three classification algorithms are explored:
+
+| Model | Description |
+|---|---|
+| Logistic Regression | Baseline classification model |
+| Decision Tree | Tree-based classification model |
+| Random Forest | Ensemble learning model |
+
+## 📈 Model Evaluation
+
+The models are evaluated using classification performance metrics such as:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+
+The comparison helps examine how different classification algorithms perform on the customer churn prediction task.
 
 ## 🛠️ Technologies Used
 
 - Python
-- Pandas and NumPy
-- Matplotlib and Seaborn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 - Scikit-learn
 - Jupyter Notebook / Google Colab
 
-## 🤖 Machine Learning Models
-
-The project explores and compares:
-
-- **Logistic Regression** — a baseline classification model.
-- **Random Forest** — an ensemble learning model for classification.
-
-Model performance will be evaluated using appropriate classification metrics, including accuracy, precision, recall, F1-score, and ROC-AUC.
-
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```text
-churnscope/
+ChurnScope-Customer-Churn-Prediction/
+│
 ├── Churn_Analysis_Using_Logistic_Regression.ipynb
+├── Churn_Analysis_Using_Decision_tree_classifier.ipynb
 ├── Churn_Analysis_Using_Random_Forest.ipynb
+├── customer_data.csv
 ├── README.md
 └── LICENSE
 ```
 
-## 🚀 Current Status
+## 🚀 Future Improvements
 
-The project is under development. Current work focuses on data preprocessing, exploratory data analysis, model training, and performance evaluation.
-
-## 🔮 Future Improvements
-
-- Compare model performance and feature importance.
-- Build an interactive dashboard for churn insights.
-- Develop an API to serve predictions.
-- Integrate the model into a full-stack web application.
+- Develop an interactive customer churn analytics dashboard.
+- Compare model performance through visualizations.
+- Integrate the trained models into a prediction API.
+- Build a web application for customer churn analysis and prediction.
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
-**Note:** The dataset is provided by a third party. Please refer to its original source and applicable terms before redistributing it.
+**Project Status:** Machine learning model development and evaluation completed; dashboard and application integration are planned future improvements.
